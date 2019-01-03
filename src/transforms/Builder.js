@@ -9,7 +9,7 @@ class Builder extends Associator {
   }
 
   _transform (data, enc, done) {
-    done(null, this.model.build(data))
+    done(null, this.model.build(data, {isNewRecord: false}))
   }
 
 }
